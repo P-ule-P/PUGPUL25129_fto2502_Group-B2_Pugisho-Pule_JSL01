@@ -35,6 +35,12 @@ p {
   text-align: center;
 }
 
+a {
+  color: #000112;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
 /* ---------------Layout--------------- */
 body,
 html {
@@ -102,6 +108,12 @@ button {
   border-radius: 0 6.3em 6.3em 0;
 }
 
+@media screen and (min-width: 668px) {
+  .mobile-only-logo {
+    display: none;
+  }
+}
+
 h1 {
   width: 10.6em;
   height: 1.9em;
@@ -159,6 +171,11 @@ li {
   align-items: center;
 }
 
+a:hover,
+a:focus {
+  color: blue;
+}
+
 /*--------------- iPhone SE (375px - 667px) --------------- */
 @media screen and (min-width: 375px) and (max-width: 667px) {
   body {
@@ -173,10 +190,28 @@ li {
       "section3";
   }
 
-  /*--------------- Show only on mobile (typically < 768px) ---------------*/
-  @media only screen and (max-width: 767px) {
-    .mobile-only-image {
-      display: block;
-    }
+  nav {
+    display: none;
+  }
+
+  .mobile-only-logo {
+    width: 1.5em;
+    height: 1.6em;
+    top: 1.25em;
+    left: 1em;
+    border-radius: 0.125em;
+    margin: 1.25em 0.5em 1.2em 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  h1 {
+    width: 9.9em;
+    height: 1.4em;
+    white-space: nowrap;
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
 }
