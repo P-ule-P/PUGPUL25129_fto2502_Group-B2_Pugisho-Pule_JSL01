@@ -4,61 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets\favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Career Development Plan</title>
   </head>
   <body>
-    <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
+    <!--------------- Navigation Sidebar --------------->
     <nav>
+      <img src="assets\logo-light.svg" alt="Kanban Logo" class="logo" />
+      <div class="nav-item">
+        <h6>ALL BOARDS (1)</h6>
+      </div>
       <div>
-        <h4>ALL BOARDS (1)</h4>
-        <button>Launch Career</button>
+        <button>
+          <p id="button-text">Launch Career</p>
+        </button>
       </div>
     </nav>
 
-    <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
+    <!--------------- Header --------------->
     <header>
       <div>
-        <h2>Launch Career</h2>
+        <h1>Launch Career</h1>
       </div>
     </header>
 
-    <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-    <section>
+    <!--------------- Section Columns --------------->
+    <!-- TODO Column -->
+    <section class="task-todo">
       <div>
-        <span></span>
-        <h4>TODO (4)</h4>
+        <h6><span class="status-todo"></span>TODO (4)</h6>
       </div>
       <!-- Tasks container for TODO -->
-      <div>
-        <div>Launch Epic Career 🚀</div>
-        <div>Conquer React ⚛️</div>
-        <div>Understand Databases ⚙️</div>
-        <div>Crush Frameworks 🖼️</div>
-      </div>
+      <ul>
+        <li><p>Launch Epic Career 🚀</p></li>
+        <li><p>Understand Databases ⚙️</p></li>
+        <li><p>Crush Frameworks 🖼️</p></li>
+        <li><p>Conquer React ⚛️</p></li>
+      </ul>
     </section>
+
     <!-- DOING Column -->
-    <section>
+    <section class="task-doing">
       <div>
-        <span></span>
-        <h4>DOING (2)</h4>
+        <h6><span class="status-doing"></span>DOING (2)</h6>
       </div>
       <!-- Tasks container for DOING -->
-      <div>
-        <div>Master JavaScript 💛</div>
-        <div>Never Give Up 🏆</div>
-      </div>
+      <ul>
+        <li><p>Master JavaScript 💛</p></li>
+        <li><p>Never Give Up 🏆</p></li>
+      </ul>
     </section>
+
     <!-- DONE Column -->
-    <section>
+    <section class="task-done">
       <div>
-        <span></span>
-        <h4>DONE (2)</h4>
+        <h6><span class="status-done"></span>DONE (2)</h6>
       </div>
       <!-- Tasks container for DONE -->
-      <div>
-        <div>Explore ES6 Features 🚀</div>
-        <div>Have fun 🥳</div>
-      </div>
+      <ul>
+        <li><p>Explore ES6 Features 🚀</p></li>
+        <li><p>Have fun 🥳</p></li>
+      </ul>
     </section>
   </body>
 </html>

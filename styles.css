@@ -1,39 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+/* ---------------Typography--------------- */
+h1 {
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #000112;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 0.75em;
+  line-height: 100%;
+  letter-spacing: 0.15em;
+  color: #828fa3;
+}
+
+p {
+  font-weight: 700;
+  font-size: 0.9em;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #000112;
+}
+
+#button-text {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ---------------Layout--------------- */
 body,
 html {
   height: 100vh;
+  background-color: #f4f7fd;
 }
 
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 22% 21% 21% 21% auto;
+  grid-template-columns: 22% 21% 21% 21% 0;
   grid-template-rows: 10% auto;
   grid-template-areas:
-    "nav header header header"
-    "nav section1 section2 section3";
+    "nav header header header header"
+    "nav section1 section2 section3 section";
 }
 
 nav {
   grid-area: nav;
-  background-color: red;
+  border-right: 0.1em solid #e4ebfa;
+  background-color: #ffffff;
 }
 
 header {
   grid-area: header;
-  background-color: blue;
+  border-bottom: 0.1em solid #e4ebfa;
+  background-color: #ffffff;
+  width: 71.25em;
+}
+
+section {
+  background-color: #f4f7fd;
 }
 
 section:nth-of-type(1) {
   grid-area: section1;
-  background-color: green;
 }
 
 section:nth-of-type(2) {
   grid-area: section2;
-  background-color: yellow;
 }
 
 section:nth-of-type(3) {
   grid-area: section3;
-  background-color: orange;
+}
+
+.logo {
+  width: 9.5em;
+  height: 1.6em;
+  top: 0.5em;
+  left: 2.1em;
+  margin: 1.8em 7em 0.2em 2em;
+}
+
+.nav-item {
+  margin-left: 2em;
+}
+
+button {
+  width: 17.3em;
+  height: 3em;
+  top: 2.1em;
+  background: #635fc7;
+  border: #635fc7;
+  border-radius: 0 6.3em 6.3em 0;
+}
+
+h1 {
+  width: 10.6em;
+  height: 1.9em;
+  margin: 0.7em 59.1em 2.3em 1em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.task-todo,
+.task-doing,
+.task-done {
+  margin-left: 1.5em;
+}
+
+.status-todo,
+.status-doing,
+.status-done {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.status-todo {
+  background-color: #49c4e5;
+}
+
+.status-doing {
+  background-color: #8471f2;
+}
+
+.status-done {
+  background-color: #67e2ae;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 1.25em 0;
+  padding: 1em;
+  background-color: #ffffff;
+  width: 17.5em;
+  height: 3.75em;
+  top: 10em;
+  left: 20.25em;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 6px 0 rgba(54, 78, 126, 0.1015);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/*--------------- iPhone SE (375px - 667px) --------------- */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto, 4);
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "section3";
+  }
+
+  /*--------------- Show only on mobile (typically < 768px) ---------------*/
+  @media only screen and (max-width: 767px) {
+    .mobile-only-image {
+      display: block;
+    }
+  }
 }
