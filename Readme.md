@@ -1,16 +1,22 @@
-# Career Development Plan
+# Career Development Plan 🎓
 
-## Project Description
+---
 
-The Career Development Plan Kanban Board is a simple project management tool designed to help aspiring developers organize and track their progress toward launching a new career. Inspired by agile principles, it uses a classic Kanban layout with three stages—TODO, DOING, and DONE—to visually manage tasks and milestones. The board promotes focus, persistence, and structured growth, offering users a clear overview of their journey. Although centred on tech careers, the concept can be easily adapted for various goals and projects.
+## Project Description 🧾
 
-## Technologies Used
+The Career Development Plan Kanban Board is a simple project management tool designed to help aspiring developers organize and track their progress toward launching a new career. Inspired by agile principles, it uses a classic Kanban layout with three stages—🔵TODO, 🟣DOING, and 🟢DONE—to visually manage tasks and milestones. The board promotes focus, persistence, and structured growth, offering users a clear overview of their journey. Although centred on tech careers, the concept can be easily adapted for various goals and projects.
 
-- **HTML**
-- **CSS**
-- **GitHub**
+---
 
-## Features
+## Technologies Used 👨🏽‍💻
+
+![alt **HTML**](image.png)
+![alt **CSS**](image-1.png)
+![alt **GitHub**](image-4.png)
+
+---
+
+## Features 🛠️
 
 ### Created
 
@@ -22,7 +28,9 @@ The Career Development Plan Kanban Board is a simple project management tool des
 - Responsive design for mobile compatibility
 - Task cards behave like a link, changing color when hovering/ focusing
 
-## Setup Instructions
+---
+
+## Setup Instructions 🧩
 
 1.  **Create a New Board:**
     Create a new board and name it to represent your project.
@@ -32,7 +40,9 @@ The Career Development Plan Kanban Board is a simple project management tool des
 4.  **Execute:**
     Save the project and start working.
 
-## Usage Instructions
+---
+
+## Usage Instructions 🪄
 
 1. Start with the To Do column.
 
